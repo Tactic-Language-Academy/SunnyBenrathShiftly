@@ -5,7 +5,7 @@
 
 const REQUIRED_ROLE='manager';
 
-const API_URL='https://script.google.com/macros/s/AKfycbzjVPDNdARwqZj8P-MsvcDXO5ETnEasGCpKevNOfs_lb_S9lcXo0zf-3RM9wfwTUmoU/exec';
+const API_URL='https://script.google.com/macros/s/AKfycbwi9oLcNGQnyhnlLcs5NExpibmgIRolpi4admRtoAXtP19JqCmguU1rRt1CmdDAMEL4/exec';
 const $=s=>document.querySelector(s);
 const session=(()=>{try{return JSON.parse(sessionStorage.getItem('sunny_session')||'null')}catch{return null}})();
 if(!session||!session.code||session.role!==REQUIRED_ROLE)location.replace('index.html');
