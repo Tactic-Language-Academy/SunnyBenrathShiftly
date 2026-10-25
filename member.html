@@ -10,7 +10,7 @@
 
 const REQUIRED_ROLE='employee';
 
-const API_URL='https://script.google.com/macros/s/AKfycbwi9oLcNGQnyhnlLcs5NExpibmgIRolpi4admRtoAXtP19JqCmguU1rRt1CmdDAMEL4/exec';
+const API_URL='https://script.google.com/macros/s/AKfycbzrLOBbVQRJcEyNUHMdBvyGleBerXOhoGIaOAPKaPBLJcVX2IihyWGqI74rFI53Nw06/exec';
 const $=s=>document.querySelector(s);
 const session=(()=>{try{return JSON.parse(sessionStorage.getItem('sunny_session')||'null')}catch{return null}})();
 if(!session||!session.code||session.role!==REQUIRED_ROLE)location.replace('index.html');
